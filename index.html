@@ -55,6 +55,10 @@
                 font-weight: normal;
             }
 
+            .lead {
+                font-size: 1.25rem;
+            }
+
             @media (min-width: 576px) {
                 table.cv-info {
                     max-width: 90%;
@@ -87,10 +91,11 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a
-                                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                href="#skills">Skills</a></li>
+                                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skills</a>
+                        </li>
                         <li class="nav-item mx-0 mx-lg-1"><a
-                                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+                                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                                href="#education">Education</a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1"><a
                                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
@@ -138,10 +143,10 @@
                         <tr>
                             <td><b><i class="fas fa-star"></i> Hobbies:</b></td>
                             <td>
-                                <span class="badge badge-secondary">Badminton</span> 
-                                <span class="badge badge-secondary">Music</span> 
-                                <span class="badge badge-secondary">Making video games</span> 
-                                <span class="badge badge-secondary">Video games</span> 
+                                <span class="badge badge-secondary">Badminton</span>
+                                <span class="badge badge-secondary">Music</span>
+                                <span class="badge badge-secondary">Making video games</span>
+                                <span class="badge badge-secondary">Video games</span>
                             </td>
                         </tr>
                     </table>
@@ -152,7 +157,7 @@
         <section class="page-section portfolio" id="skills">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skills</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -162,79 +167,79 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row">
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
+                    <div class="col-md-6 col-lg-6 mb-2">
+                        <div class="portfolio-item mx-auto">
+                            <h3 class="text-info">TECHNICAL SKILL</h3>
+                            <div>
+                                <h5>Programing languages</h5>
+                                <ul>
+                                    <li>Java (primarily Java EE)</li>
+                                    <li>C# (with ASP.NET)</li>
+                                    <li>PHP</li>
+                                </ul>
+                                <h5>Databases</h5>
+                                <ul>
+                                    <li>MS SQL Server</li>
+                                    <li>MySQL</li>
+                                </ul>
+                                <h5>Frameworks / Libraries / Platforms</h5>
+                                <ul>
+                                    <li>(Java) Spring MVC framework</li>
+                                    <li>(Java) Thymeleaf template engine</li>
+                                    <li>(Java) Glassfish server</li>
+                                    <li>(ASP.NET) Entity framework</li>
+                                    <li>(ASP.NET) IIS local server</li>
+                                    <li>(PHP) Apache server using XAMPP</li>
+                                    <li>(Javascript) JQuery</li>
+                                    <li>(CSS) Bootstrap</li>
+                                    <li>(Git) Github</li>
+                                </ul>
+                                <h5>Programs</h5>
+                                <ul>
+                                    <li>Visual Studio Code <i class="fas fa-star"></i></li>
+                                    <li>Visual Studio (Community)</li>
+                                    <li>Netbeans 8.2</li>
+                                </ul>
+                                <h5>Other programing skills</h5>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <h5>Other IT skills</h5>
+                                <ul>
+                                    <li>Word</li>
+                                    <li>Power Point</li>
+                                    <li>Excel</li>
+                                    <li>Photoshop (basic designing skill)</li>
+                                </ul>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="" />
+
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" />
+                    <div class="col-md-6 col-lg-6 mb-2">
+                        <div class="portfolio-item mx-auto">
+                            <h3 class="text-info">PERSONAL SKILL</h3>
+                            <ul class="mb-5">
+                                <li>Work in team</li>
+                                <li>Analyze and asign tasks</li>
+                            </ul>
+                            <h3 class="text-info">LANGUAGES</h3>
+                            <ul>
+                                <li>Vietnamese (Native)</li>
+                                <li>English (Intermediate reading / basic communication)</li>
+                                <li>Japanese (Intermediate reading / Intermediate communication)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-info text-white mb-0" id="about">
+        <section class="page-section bg-info text-white mb-0" id="education">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">Education</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -243,20 +248,28 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ml-auto">
-                        <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
-                            includes the complete source files including HTML, CSS, and JavaScript as well as optional
-                            SASS stylesheets for easy customization.</p>
+                    <div class="col-lg-4 ml-auto text-right">
+                        <p class="lead">
+                            <span class="badge badge-secondary">2018</span>
+                            <i class="fas fa-angle-right"></i>
+                            <span class="badge badge-secondary">2020</span>
+                        </p>
                     </div>
-                    <div class="col-lg-4 mr-auto">
-                        <p class="lead">You can create your own custom avatar for the masthead, change the icon in the
-                            dividers, and add your email address to the contact form to make it fully functional!</p>
+                    <div class="col-lg-8 mr-auto">
+                        <span class="lead"><strong>International Programer</strong> @ FPT Aptech Ho Chi Minh City</span>
                     </div>
                 </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/"><i
-                            class="fas fa-download mr-2"></i>Free Download!</a>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-right">
+                        <p class="lead">
+                            <span class="badge badge-secondary">2011</span>
+                            <i class="fas fa-angle-right"></i>
+                            <span class="badge badge-secondary">2015</span>
+                        </p>
+                    </div>
+                    <div class="col-lg-8 mr-auto">
+                        <span class="lead"><strong>Japanese Bachelor</strong> @ University of Pedagogy Ho Chi Minh City</span>
+                    </div>
                 </div>
             </div>
         </section>
