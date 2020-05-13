@@ -52,6 +52,25 @@
 
             .cv-info {
                 font-size: larger;
+                font-weight: normal;
+            }
+
+            @media (min-width: 576px) {
+                table.cv-info {
+                    max-width: 90%;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .container {
+                    max-width: 70%;
+                }
+            }
+
+            @media (min-width: 1400px) {
+                table.cv-info {
+                    max-width: 60%;
+                }
             }
         </style>
     </head>
@@ -69,7 +88,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a
                                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                href="#portfolio">Portfolio</a></li>
+                                href="#skills">Skills</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a
                                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
                         </li>
@@ -104,24 +123,33 @@
                 <div class="container">
                     <table class="mr-auto ml-auto cv-info text-left">
                         <tr>
-                            <td width="15%"><i class="fas fa-calendar-alt"></i></td>
-                            <td>September 18th, 1993</td>
+                            <td width="40%"><b><i class="fas fa-calendar-alt"></i> Date of birth:</b></td>
+                            <td width="60%">September 18th, 1993</td>
                         </tr>
                         <tr>
-                            <td><i class="fas fa-at"></i></td>
+                            <td><b><i class="fas fa-at"></i> Email:</b></td>
                             <td><a href="mailto:haithiennpht@gmail.com" class="text-light">haithiennpht@gmail.com</a>
                             </td>
                         </tr>
                         <tr>
-                            <td><i class="fas fa-phone"></i></td>
+                            <td><b><i class="fas fa-phone"></i> Phone:</b></td>
                             <td>090 3391 712</td>
+                        </tr>
+                        <tr>
+                            <td><b><i class="fas fa-star"></i> Hobbies:</b></td>
+                            <td>
+                                <span class="badge badge-secondary">Badminton</span> 
+                                <span class="badge badge-secondary">Music</span> 
+                                <span class="badge badge-secondary">Making video games</span> 
+                                <span class="badge badge-secondary">Video games</span> 
+                            </td>
                         </tr>
                     </table>
                 </div>
             </div>
         </header>
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio" id="skills">
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
