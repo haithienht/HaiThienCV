@@ -14,7 +14,7 @@
         if (target.length) {
           $('html, body').animate({
             scrollTop: (target.offset().top - 71)
-          }, 1000, "easeInOutExpo");
+          }, 600, "easeInOutExpo");
           return false;
         }
       }
@@ -64,6 +64,9 @@
         $(this).removeClass("floating-label-form-group-with-focus");
       });
     });
-  
+    
+    var year = new Date().getFullYear();
+
+    $("#year").html(year);
   })(jQuery); // End of use strict
   
