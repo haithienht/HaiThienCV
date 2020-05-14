@@ -18,14 +18,22 @@
         <link href="css/other.css" rel="stylesheet" />
         <link href="css/flag-icon.min.css" rel="stylesheet" />
         <link rel="icon" href="logo.png">
-
+        <style>
+            #mainNav .navbar-brand {
+                font-size: 1rem;
+            }
+        </style>
     </head>
 
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">NGUYEN PHAN HAI THIEN</a><button
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    <div>NGUYEN PHAN HAI THIEN</div>
+                    <div>グエン・ファン・ハイ・ティン</div>
+                </a>
+                <button
                     class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-info text-white rounded"
                     type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i
@@ -49,9 +57,11 @@
         <header class="masthead bg-info text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <h4>
-                    <a href="./"><span class="flag-icon flag-icon-us"></span></a>
-                    <a href="./index_vn.html"><span class="flag-icon flag-icon-vn"></span></a>
-                    <a href="./index_jp.html"><span class="flag-icon flag-icon-jp border border-light"></span></a>
+                    <a href="./" data-toggle="tooltip" title="English"><span class="flag-icon flag-icon-us"></span></a>
+                    <a href="./index_vn.html" data-toggle="tooltip" title="Tiếng Việt"><span
+                            class="flag-icon flag-icon-vn"></span></a>
+                    <a href="./index_jp.html" data-toggle="tooltip" title="日本語"><span
+                            class="flag-icon flag-icon-jp border border-light"></span></a>
                 </h4>
                 <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5 rounded-circle" src="img/ava.jpg"
                     alt="" /><!-- Masthead Heading-->
@@ -585,7 +595,7 @@
                                     <b>達成:</b>
                                     <ul>
                                         <li>学校／企業／CHORAY病院で初級日本語を授業。</li>
-                                        <li>日本人と仕事する。•	交流部のメンバー（交流）。</li>
+                                        <li>日本人と仕事する。• 交流部のメンバー（交流）。</li>
                                         <li>事務業務。</li>
                                         <li>日本で日本語スピーチコンテストの優秀者を引率（一週間）。</li>
                                     </ul>
@@ -633,10 +643,10 @@
         </div>
         <!-- Bootstrap core JS-->
         <script src="js/all.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 
