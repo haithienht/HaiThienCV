@@ -1,9 +1,39 @@
 /*!
-    * Start Bootstrap - Freelancer v6.0.1 (https://startbootstrap.com/themes/freelancer)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
-    */
+	* Start Bootstrap - Freelancer v6.0.1 (https://startbootstrap.com/themes/freelancer)
+	* Copyright 2013-2020 Start Bootstrap
+	* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
+	*/
 (function ($) {
+	function generateData($data) {
+		let techSkills = $("#tech_skills")
+		let otherSkills = $("#other_skills")
+		techSkills.html("")
+		otherSkills.html("")
+		for (const key in $data["skills"]) {
+			let html = '<h3 class="text-info">' + key.toUpperCase() + '</h3>'
+			let skillHtml = ''
+			if (!Array.isArray($data["skills"][key])) {
+				for (const skillitem in $data["skills"][key]) {
+					skillHtml += "<h5>" + skillitem + "</h5>"
+					skillHtml += "<ul>"
+					$data["skills"][key][skillitem].forEach(element => {
+						skillHtml += '<li>' + element + '</li>'
+					});
+					skillHtml += "</ul>"
+				}
+			} else {
+				skillHtml += "<ul>"
+				$data["skills"][key].forEach(element => {
+					skillHtml += '<li>' + element + '</li>'
+				});
+				skillHtml += "</ul>"
+			}
+			html += skillHtml
+			if (key == "Technical Skills") { techSkills.append(html) } else { otherSkills.append(html) }
+		}
+	}
+	generateData(mydata);
+
 	"use strict"; // Start of use strict
 
 	// Smooth scrolling using jQuery easing
@@ -72,4 +102,7 @@
 	var year = new Date().getFullYear();
 
 	$("#year").html(year);
+
+
+
 })(jQuery); // End of use strict
