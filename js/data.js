@@ -15,6 +15,11 @@ var mydata = {
             "Software Engineer": "~8 months exp",
             "Japanese Teacher": ">2 yrs exp"
         },
+        "available_for": [
+            "Java Developer",
+            "C# Developer",
+            "Game Developer",
+        ]
     },
     "skills": {
         "Technical Skills": {
@@ -151,7 +156,7 @@ var mydata = {
                     "SQL Server Management Studio": "SQL Server Manager.",
                     "Github": "Version control and team management.",
                 },
-                "Technologies":[
+                "Technologies": [
                     "Java EE (deploy on Glassfish Server)",
                     "Database MS SQL Server",
                     "Java Persistent API",

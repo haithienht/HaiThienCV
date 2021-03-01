@@ -21,6 +21,16 @@
 		}
 		$("#experience_short").html(shortExperince)
 
+		let availableFor = ''
+		if (data["personal_info"]["available_for"] && data["personal_info"]["available_for"].length > 0) {
+			availableFor = '<i class="fas fa-star"></i> <span>Currently available for:</span><ul class="text-left">';
+			for (let av in data["personal_info"]["available_for"]) {
+				availableFor += "<li>" + data["personal_info"]["available_for"][av] + "</li>"
+			}
+			availableFor += '</ul>'
+		}
+		$("#available_for").html(availableFor);
+
 
 		// SKILL DATA
 		let techSkills = $("#tech_skills")
