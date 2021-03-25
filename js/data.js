@@ -16,9 +16,9 @@ var mydata = {
             "Japanese Teacher": ">2 yrs exp"
         },
         "available_for": [
-            "Java Developer",
-            "C# Developer",
-            "Game Developer",
+            // "Java Developer",
+            // "C# Developer",
+            // "Game Developer",
         ]
     },
     "skills": {
